@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Naledi Local Municipality — a modern digital municipality. Access services, transparency data, notices, tenders and community information for Vryburg, Stella, Dithakwaneng and Devondale.">
+  <meta name="theme-color" content="#10243b">
+  <title>Naledi Local Municipality | Serving Our Communities</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <link rel="stylesheet" href="css/inner-pages.css">
+  <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- UTILITY BAR -->
+  <div class="utility-bar">
+    <div class="container utility-inner">
+      <span><i data-lucide="clock-3"></i> Monday – Friday, 07:30 – 16:00</span>
+      <div class="utility-links">
+        <a href="tel:+27539282200"><i data-lucide="phone"></i> 053 928 2200</a>
+        <a href="mailto:info@naledigov.co.za"><i data-lucide="mail"></i> Contact municipality</a>
+        <button class="text-button" id="accessibilityToggle" aria-expanded="false"><i data-lucide="accessibility"></i> Accessibility</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="site-header" id="top">
+    <div class="container header-main">
+      <a class="brand" href="#top" aria-label="Naledi Local Municipality home">
+        <img src="images/naledilocalmunicipalitylogo.jpg" alt="Naledi Local Municipality logo" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'">
+        <span class="brand-fallback"><span class="brand-mark">N</span></span>
+        <span class="brand-copy"><strong>NALEDI</strong><small>LOCAL MUNICIPALITY</small></span>
+      </a>
+      <div class="header-actions">
+        <a class="header-contact" href="tel:+27539282200"><span class="contact-icon"><i data-lucide="phone-call"></i></span><span><small>Need assistance?</small><strong>053 928 2200</strong></span></a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false"><i data-lucide="menu"></i></button>
+      </div>
+    </div>
+    <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+      <div class="container nav-inner">
+        <a class="nav-home active" href="#top" aria-label="Home"><i data-lucide="house"></i></a>
+        <div class="nav-item"><button class="nav-link" data-menu="municipality">The Municipality <i data-lucide="chevron-down"></i></button></div>
+        <div class="nav-item"><button class="nav-link" data-menu="services">Services <i data-lucide="chevron-down"></i></button></div>
+        <div class="nav-item"><button class="nav-link" data-menu="governance">Governance <i data-lucide="chevron-down"></i></button></div>
+        <div class="nav-item"><button class="nav-link" data-menu="resources">Documents & Resources <i data-lucide="chevron-down"></i></button></div>
+        <a class="nav-link direct" href="pages/news.html">News & Notices</a>
+        <a class="nav-link direct" href="pages/contact.html">Contact</a>
+        <button class="nav-search" id="searchOpen" aria-label="Search website"><i data-lucide="search"></i></button>
+      </div>
+      <div class="mega-menu" id="megaMenu" hidden>
+        <div class="container mega-inner" id="megaContent"></div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <!-- =================================================== -->
+    <!-- ALERT BAR (rotating, top of hero)                    -->
+    <!-- =================================================== -->
+    <div class="alert-bar" role="region" aria-label="Municipal alerts">
+      <div class="container alert-inner">
+        <span class="alert-pill"><span class="alert-dot"></span> ALERT</span>
+        <div class="alert-track" id="alertTrack">
+          <a class="alert-item active" href="pages/public-notices.html">
+            <strong>Draft IDP &amp; Budget 2026/27</strong> — public comment now open
+            <i data-lucide="arrow-right"></i>
+          </a>
+          <a class="alert-item" href="pages/electricity.html">
+            <strong>Planned electrical maintenance</strong> — parts of Vryburg, Sat 09:00–15:00
+            <i data-lucide="arrow-right"></i>
+          </a>
+          <a class="alert-item" href="pages/tenders.html">
+            <strong>New tenders published</strong> — closing dates vary, see full advert
+            <i data-lucide="arrow-right"></i>
+          </a>
+        </div>
+        <div class="alert-controls" aria-hidden="true">
+          <button class="alert-nav" data-alert="prev" aria-label="Previous alert"><i data-lucide="chevron-left"></i></button>
+          <button class="alert-nav" data-alert="next" aria-label="Next alert"><i data-lucide="chevron-right"></i></button>
+        </div>
+      </div>
+    </div>
+
+    <!-- =================================================== -->
+    <!-- HERO                                                 -->
+    <!-- =================================================== -->
+    <section class="hero">
+      <div class="hero-image"></div>
+      <div class="hero-overlay"></div>
+      <div class="hero-shapes" aria-hidden="true">
+        <span class="shape shape-1"></span>
+        <span class="shape shape-2"></span>
+        <span class="shape shape-3"></span>
+      </div>
+
+      <div class="container hero-content">
+        <div class="eyebrow light"><span></span> NORTH WEST PROVINCE · SOUTH AFRICA</div>
+        <h1>Building a better<br><em>Naledi, together.</em></h1>
+        <p>Working with our communities to deliver quality services, create opportunities and build a municipality where everyone can thrive.</p>
+        <div class="hero-actions">
+          <a class="btn btn-gold" href="#pillars">Explore municipal services <i data-lucide="arrow-up-right"></i></a>
+          <a class="btn btn-glass" href="pages/about.html">Discover Naledi <i data-lucide="arrow-right"></i></a>
+        </div>
+        <div class="hero-note"><span class="live-dot"></span> Official municipal information and services</div>
+
+        <!-- Stat strip — inside hero-content, pinned to bottom via margin-top:auto -->
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <strong data-count="4">4</strong>
+            <span>Main towns served</span>
+          </div>
+          <div class="hero-stat">
+            <strong data-count="5">5</strong>
+            <span>Wards</span>
+          </div>
+          <div class="hero-stat">
+            <strong data-count="25376">25 376</strong>
+            <span>Square kilometres</span>
+          </div>
+          <div class="hero-stat">
+            <strong>24/7</strong>
+            <span>Emergency response</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-side-label">SERVICE · ACCOUNTABILITY · COMMUNITY</div>
+    </section>
+
+    <!-- =================================================== -->
+    <!-- QUICK SEARCH                                         -->
+    <!-- =================================================== -->
+    <section class="quick-search-wrap">
+      <div class="container">
+        <div class="quick-search">
+          <div class="search-intro"><span class="search-icon"><i data-lucide="search"></i></span><div><strong>How can we help you?</strong><small>Find a service, document, notice or municipal information.</small></div></div>
+          <form id="siteSearch" class="search-form"><label class="sr-only" for="searchInput">Search Naledi Municipality</label><input id="searchInput" type="search" placeholder="I'm looking for…" autocomplete="off"><button class="btn btn-primary" type="submit">Search <i data-lucide="arrow-right"></i></button></form>
+        </div>
+        <div class="search-results" id="searchResults" hidden></div>
+      </div>
+    </section>
+
+    <!-- =================================================== -->
+    <!-- SIX-PILLAR QUICK ACTIONS                             -->
+    <!-- =================================================== -->
+    <section class="section pillars-section" id="pillars">
+      <div class="container">
+        <div class="section-heading split-heading">
+          <div>
+            <div class="eyebrow"><span></span> START HERE</div>
+            <h2>What would you like to <em>do?</em></h2>
+            <p>Six shortcuts to the most-used parts of the municipality.</p>
+          </div>
+        </div>
+        <div class="pillar-grid">
+          <a class="pillar-card" href="pages/water-services.html">
+            <span class="pillar-icon"><i data-lucide="droplets"></i></span>
+            <h3>Report a fault</h3>
+            <p>Water leaks, sewer, electricity and refuse issues.</p>
+            <span class="pillar-arrow"><i data-lucide="arrow-up-right"></i></span>
+          </a>
+          <a class="pillar-card" href="pages/municipal-accounts.html">
+            <span class="pillar-icon"><i data-lucide="receipt"></i></span>
+            <h3>Pay or query my account</h3>
+            <p>Billing, tariffs, indigent support and payment options.</p>
+            <span class="pillar-arrow"><i data-lucide="arrow-up-right"></i></span>
+          </a>
+          <a class="pillar-card" href="pages/tenders.html">
+            <span class="pillar-icon"><i data-lucide="briefcase-business"></i></span>
+            <h3>Do business with us</h3>
+            <p>Tenders, procurement and supplier information.</p>
+            <span class="pillar-arrow"><i data-lucide="arrow-up-right"></i></span>
+          </a>
+          <a class="pillar-card" href="pages/idp.html">
+            <span class="pillar-icon"><i data-lucide="landmark"></i></span>
+            <h3>See our plans &amp; budgets</h3>
+            <p>IDP, SDBIP, annual reports and financial statements.</p>
+            <span class="pillar-arrow"><i data-lucide="arrow-up-right"></i></span>
+          </a>
+          <a class="pillar-card" href="pages/public-participation.html">
+            <span class="pillar-icon"><i data-lucide="users"></i></span>
+            <h3>Have your say</h3>
+            <p>Public meetings, comment periods and ward participation.</p>
+            <span class="pillar-arrow"><i data-lucide="arrow-up-right"></i></span>
+          </a>
+          <a class="pillar-card" href="pages/emergency-services.html">
+            <span class="pillar-icon"><i data-lucide="shield-alert"></i></span>
+            <h3>Emergency help</h3>
+            <p>Fire, rapid response, police and ambulance numbers.</p>
+            <span class="pillar-arrow"><i data-lucide="arrow-up-right"></i></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================== -->
+    <!-- NALEDI AT A GLANCE                                   -->
+    <!-- =================================================== -->
+    <section class="section glance-section">
+      <div class="container">
+        <div class="section-heading">
+          <div class="eyebrow"><span></span> NALEDI AT A GLANCE</div>
+          <h2>A municipality in <em>numbers.</em></h2>
+          <p>A snapshot of Naledi Local Municipality. Figures marked "demo" are illustrative only and must be verified against official municipal publications before launch.</p>
+        </div>
+        <div class="glance-grid">
+          <article class="glance-card">
+            <div class="glance-icon"><i data-lucide="map-pin"></i></div>
+            <strong class="glance-value" data-count="4">4</strong>
+            <span class="glance-label">Towns served</span>
+            <small class="glance-note">Vryburg · Stella · Dithakwaneng · Devondale</small>
+          </article>
+          <article class="glance-card">
+            <div class="glance-icon"><i data-lucide="users"></i></div>
+            <strong class="glance-value" data-count="5">5</strong>
+            <span class="glance-label">Wards</span>
+            <small class="glance-note">Community representation across the municipality</small>
+          </article>
+          <article class="glance-card">
+            <div class="glance-icon"><i data-lucide="building-2"></i></div>
+            <strong class="glance-value" data-count="6">6</strong>
+            <span class="glance-label">Departments</span>
+            <small class="glance-note">Technical · Community · Treasury · Corporate · Planning · MM's Office</small>
+          </article>
+          <article class="glance-card glance-demo">
+            <span class="glance-demo-badge">DEMO</span>
+            <div class="glance-icon"><i data-lucide="wallet"></i></div>
+            <strong class="glance-value" data-count="480">R480m</strong>
+            <span class="glance-label">Annual operating budget</span>
+            <small class="glance-note">Illustrative figure — confirm against approved MTREF</small>
+          </article>
+        </div>
+        <p class="glance-disclaimer">
+          <i data-lucide="info"></i>
+          Demo figures are provided only to illustrate how real data would appear. Always refer to the official municipal website and approved documents for verified figures.
+        </p>
+      </div>
+    </section>
+
+    <!-- =================================================== -->
+    <!-- DEVELOPMENT ACROSS NALEDI                            -->
+    <!-- =================================================== -->
+    <section class="section development-section">
+      <div class="container">
+        <div class="section-heading split-heading">
+          <div>
+            <div class="eyebrow"><span></span> DEVELOPMENT ACROSS NALEDI</div>
+            <h2>Where we are <em>investing.</em></h2>
+            <p>Key service-delivery areas the municipality focuses on. Project cards below link to the relevant service pages.</p>
+          </div>
+          <a class="text-link" href="pages/idp.html">See our IDP priorities <i data-lucide="arrow-up-right"></i></a>
+        </div>
+        <div class="dev-grid">
+          <a class="dev-card" href="pages/water-services.html">
+            <div class="dev-media dev-water" aria-hidden="true"></div>
+            <div class="dev-body">
+              <span class="tag">WATER &amp; SANITATION</span>
+              <h3>Reliable water for every community</h3>
+              <p>Bulk supply, reticulation and sanitation infrastructure.</p>
+              <span class="dev-link">Explore service <i data-lucide="arrow-up-right"></i></span>
+            </div>
+          </a>
+          <a class="dev-card" href="pages/electricity.html">
+            <div class="dev-media dev-power" aria-hidden="true"></div>
+            <div class="dev-body">
+              <span class="tag">ELECTRICITY</span>
+              <h3>Keeping the lights on</h3>
+              <p>Network upgrades, safety and new connections.</p>
+              <span class="dev-link">Explore service <i data-lucide="arrow-up-right"></i></span>
+            </div>
+          </a>
+          <a class="dev-card" href="pages/housing.html">
+            <div class="dev-media dev-housing" aria-hidden="true"></div>
+            <div class="dev-body">
+              <span class="tag">HOUSING</span>
+              <h3>Decent shelter, real homes</h3>
+              <p>Human settlements and title deed programmes.</p>
+              <span class="dev-link">Explore service <i data-lucide="arrow-up-right"></i></span>
+            </div>
+          </a>
+          <a class="dev-card" href="pages/waste-management.html">
+            <div class="dev-media dev-waste" aria-hidden="true"></div>
+            <div class="dev-body">
+              <span class="tag">WASTE</span>
+              <h3>A cleaner Naledi</h3>
+              <p>Refuse collection, recycling and illegal dumping.</p>
+              <span class="dev-link">Explore service <i data-lucide="arrow-up-right"></i></span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================== -->
+    <!-- TRANSPARENCY TEASER                                  -->
+    <!-- =================================================== -->
+    <section class="section transparency-teaser">
+      <div class="container">
+        <div class="teaser-grid">
+          <div class="teaser-copy">
+            <div class="eyebrow light"><span></span> TRANSPARENCY &amp; ACCOUNTABILITY</div>
+            <h2>Open government, <em>by design.</em></h2>
+            <p>Budgets, performance and projects — accessible to every resident, in plain language, with source documents attached. A preview of the transparency portal we would build next.</p>
+            <div class="teaser-actions">
+              <a class="btn btn-gold" href="pages/budgets.html">Explore budgets &amp; reports <i data-lucide="arrow-up-right"></i></a>
+              <a class="text-link teaser-link" href="pages/public-notices.html">See public notices <i data-lucide="arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="teaser-visual" aria-hidden="true">
+            <div class="teaser-panel">
+              <div class="teaser-panel-head">
+                <span>Budget vs. expenditure · DEMO</span>
+                <small>Illustrative only</small>
+              </div>
+              <div class="teaser-bars">
+                <div class="teaser-bar">
+                  <span class="teaser-bar-label">Water</span>
+                  <div class="teaser-bar-track"><span style="width: 82%"></span></div>
+                  <span class="teaser-bar-value">82%</span>
+                </div>
+                <div class="teaser-bar">
+                  <span class="teaser-bar-label">Electricity</span>
+                  <div class="teaser-bar-track"><span style="width: 74%"></span></div>
+                  <span class="teaser-bar-value">74%</span>
+                </div>
+                <div class="teaser-bar">
+                  <span class="teaser-bar-label">Roads</span>
+                  <div class="teaser-bar-track"><span style="width: 61%"></span></div>
+                  <span class="teaser-bar-value">61%</span>
+                </div>
+                <div class="teaser-bar">
+                  <span class="teaser-bar-label">Housing</span>
+                  <div class="teaser-bar-track"><span style="width: 55%"></span></div>
+                  <span class="teaser-bar-value">55%</span>
+                </div>
+                <div class="teaser-bar">
+                  <span class="teaser-bar-label">Waste</span>
+                  <div class="teaser-bar-track"><span style="width: 88%"></span></div>
+                  <span class="teaser-bar-value">88%</span>
+                </div>
+              </div>
+              <div class="teaser-panel-foot">
+                <i data-lucide="info"></i> Demo data — not actual municipal figures
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================== -->
+    <!-- SERVICES                                              -->
+    <!-- =================================================== -->
+    <section class="section services-section" id="services">
+      <div class="container">
+        <div class="section-heading split-heading">
+          <div><div class="eyebrow"><span></span> MUNICIPAL SERVICES</div><h2>Services made <em>accessible.</em></h2><p>Find the information and support you need, all in one place.</p></div>
+          <a class="text-link" href="#all-services">View all services <i data-lucide="arrow-up-right"></i></a>
+        </div>
+        <div class="service-grid" id="all-services">
+          <a class="service-card featured" href="pages/water-services.html"><span class="service-icon"><i data-lucide="droplets"></i></span><span class="card-kicker">ESSENTIAL SERVICES</span><h3>Water &amp; sanitation</h3><p>Water services, sanitation information, reporting and service updates.</p><span class="card-arrow"><i data-lucide="arrow-up-right"></i></span></a>
+          <a class="service-card" href="pages/electricity.html"><span class="service-icon"><i data-lucide="zap"></i></span><span class="card-kicker">UTILITIES</span><h3>Electricity</h3><p>Electricity enquiries, faults and municipal service information.</p><span class="card-arrow"><i data-lucide="arrow-up-right"></i></span></a>
+          <a class="service-card" href="pages/housing.html"><span class="service-icon"><i data-lucide="house"></i></span><span class="card-kicker">COMMUNITY</span><h3>Housing &amp; human settlements</h3><p>Housing programmes, property administration and related services.</p><span class="card-arrow"><i data-lucide="arrow-up-right"></i></span></a>
+          <a class="service-card" href="pages/waste-management.html"><span class="service-icon"><i data-lucide="recycle"></i></span><span class="card-kicker">ENVIRONMENT</span><h3>Waste management</h3><p>Refuse collection, waste services and environmental information.</p><span class="card-arrow"><i data-lucide="arrow-up-right"></i></span></a>
+          <a class="service-card" href="pages/municipal-accounts.html"><span class="service-icon"><i data-lucide="file-text"></i></span><span class="card-kicker">REVENUE</span><h3>Municipal accounts</h3><p>Billing enquiries, revenue forms and municipal account support.</p><span class="card-arrow"><i data-lucide="arrow-up-right"></i></span></a>
+          <a class="service-card" href="pages/emergency-services.html"><span class="service-icon"><i data-lucide="shield-alert"></i></span><span class="card-kicker">PUBLIC SAFETY</span><h3>Emergency services</h3><p>Important local emergency contacts and response information.</p><span class="card-arrow"><i data-lucide="arrow-up-right"></i></span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================== -->
+    <!-- EMERGENCY STRIP                                      -->
+    <!-- =================================================== -->
+    <section class="notice-strip" id="emergency">
+      <div class="container emergency-inner">
+        <div class="emergency-symbol"><i data-lucide="phone-call"></i></div>
+        <div class="emergency-copy"><small>LOCAL EMERGENCY CONTACTS</small><strong>Help is one call away.</strong><span>Keep important municipal and emergency numbers close.</span></div>
+        <div class="emergency-numbers"><a href="tel:0539282200"><small>General enquiries</small><strong>053 928 2200</strong></a><a href="tel:0539282252"><small>Rapid response</small><strong>053 928 2252</strong></a><a href="tel:0539282295"><small>Fire services</small><strong>053 928 2295</strong></a></div>
+      </div>
+    </section>
+
+    <!-- =================================================== -->
+    <!-- NEWS & NOTICES                                       -->
+    <!-- =================================================== -->
+    <section class="section notices-section" id="notices">
+      <div class="container">
+        <div class="section-heading split-heading">
+          <div><div class="eyebrow"><span></span> STAY INFORMED</div><h2>Latest news &amp; <em>notices.</em></h2><p>Official updates, opportunities and important information from the municipality.</p></div>
+          <a class="text-link" href="pages/news.html">View all news &amp; notices <i data-lucide="arrow-up-right"></i></a>
+        </div>
+        <div class="notice-layout">
+          <article class="notice-feature"><div class="notice-feature-image"></div><div class="notice-feature-body"><span class="tag">PUBLIC PARTICIPATION</span><h3>Be part of the decisions that shape our communities.</h3><p>Stay informed about municipal plans, public meetings and opportunities to participate in local governance.</p><a href="pages/public-participation.html" class="text-link">Explore public participation <i data-lucide="arrow-up-right"></i></a></div></article>
+          <div class="notice-list">
+            <article class="notice-item"><div class="file-icon"><i data-lucide="file-text"></i></div><div><span class="tag">BUDGET &amp; TREASURY</span><h3>Municipal budgets and related documents</h3><small>Official financial information and reports</small><a href="pages/budgets.html">Browse documents <i data-lucide="arrow-up-right"></i></a></div></article>
+            <article class="notice-item"><div class="file-icon"><i data-lucide="clipboard-list"></i></div><div><span class="tag">PROCUREMENT</span><h3>Tenders and procurement opportunities</h3><small>Access municipal tender information</small><a href="pages/tenders.html">View tenders <i data-lucide="arrow-up-right"></i></a></div></article>
+            <article class="notice-item"><div class="file-icon"><i data-lucide="briefcase-business"></i></div><div><span class="tag">CAREERS</span><h3>Vacancies and employment opportunities</h3><small>Find advertised municipal opportunities</small><a href="pages/vacancies.html">View vacancies <i data-lucide="arrow-up-right"></i></a></div></article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================== -->
+    <!-- ABOUT                                                -->
+    <!-- =================================================== -->
+    <section class="section about-section" id="about">
+      <div class="container about-grid">
+        <div class="about-visual"><img src="https://images.unsplash.com/photo-1516026672322-bc52d61a55d5?auto=format&fit=crop&w=1100&q=85" alt="South African landscape with open countryside" loading="lazy"><div class="image-caption"><span class="caption-mark"><i data-lucide="map-pin"></i></span><span><small>OUR HOME</small><strong>Vryburg · Stella · Dithakwaneng · Devondale</strong></span></div></div>
+        <div class="about-copy"><div class="eyebrow"><span></span> ABOUT NALEDI</div><h2>A municipality shaped by <em>its people.</em></h2><p class="lead">Naledi Local Municipality is situated in the western part of the Dr Ruth Segomotsi Mompati District Municipality in the North West Province.</p><p>Our work is guided by the responsibility to provide basic, quality, sustainable and equitable services through effective governance and financial management.</p><div class="vision-card"><i data-lucide="target"></i><div><small>OUR VISION</small><strong>Quality, sustainable and equitable services for our communities.</strong></div></div><a class="btn btn-primary" href="pages/about.html">More about Naledi <i data-lucide="arrow-up-right"></i></a></div>
+      </div>
+    </section>
+
+    <!-- =================================================== -->
+    <!-- RESOURCES                                            -->
+    <!-- =================================================== -->
+    <section class="section transparency-section" id="resources">
+      <div class="container">
+        <div class="section-heading"><div class="eyebrow light"><span></span> OPEN &amp; ACCOUNTABLE GOVERNANCE</div><h2>Information builds <em>trust.</em></h2><p>Access key municipal plans, reports and governance documents.</p></div>
+        <div class="resource-grid">
+          <a href="pages/idp.html" class="resource-card"><i data-lucide="landmark"></i><strong>Integrated Development Plan</strong><span>IDP documents and planning priorities</span><i data-lucide="arrow-up-right"></i></a>
+          <a href="pages/annual-reports.html" class="resource-card"><i data-lucide="chart-no-axes-combined"></i><strong>Annual reports</strong><span>Performance and annual reporting</span><i data-lucide="arrow-up-right"></i></a>
+          <a href="pages/budgets.html" class="resource-card"><i data-lucide="wallet"></i><strong>Budgets &amp; treasury</strong><span>Budgets, statements and financial reports</span><i data-lucide="arrow-up-right"></i></a>
+          <a href="pages/sdbip.html" class="resource-card"><i data-lucide="list-checks"></i><strong>Service delivery plans</strong><span>SDBIP and performance agreements</span><i data-lucide="arrow-up-right"></i></a>
+          <a href="pages/policies.html" class="resource-card"><i data-lucide="scale"></i><strong>Policies &amp; legislation</strong><span>Municipal policies and legislative resources</span><i data-lucide="arrow-up-right"></i></a>
+          <a href="pages/forms.html" class="resource-card"><i data-lucide="folder-open"></i><strong>Forms &amp; applications</strong><span>Municipal forms and application resources</span><i data-lucide="arrow-up-right"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================== -->
+    <!-- LEADERSHIP                                           -->
+    <!-- =================================================== -->
+    <section class="section leadership-section" id="governance">
+      <div class="container leadership-inner">
+        <div><div class="eyebrow"><span></span> MUNICIPAL GOVERNANCE</div><h2>Leadership with a <em>public purpose.</em></h2><p>Learn about the elected leadership, council structures, municipal management and departments responsible for serving Naledi.</p><a class="btn btn-outline" href="pages/council.html">Explore council &amp; leadership <i data-lucide="arrow-up-right"></i></a></div>
+        <div class="leadership-tiles">
+          <a href="pages/mayor.html"><i data-lucide="landmark"></i><strong>Office of the Mayor</strong><span>Executive leadership</span></a>
+          <a href="pages/speaker.html"><i data-lucide="users"></i><strong>Office of the Speaker</strong><span>Oversight &amp; council</span></a>
+          <a href="pages/departments.html"><i data-lucide="network"></i><strong>Departments</strong><span>Municipal administration</span></a>
+          <a href="pages/council-meetings.html"><i data-lucide="calendar-days"></i><strong>Council meetings</strong><span>Meetings &amp; proceedings</span></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- =================================================== -->
+    <!-- COMMUNITY BANNER                                     -->
+    <!-- =================================================== -->
+    <section class="community-banner"><div class="community-photo"></div><div class="container community-content"><div class="eyebrow light"><span></span> YOUR VOICE MATTERS</div><h2>Stronger communities<br>start with <em>participation.</em></h2><p>Take part in public participation processes, share feedback and stay connected with municipal developments.</p><a class="btn btn-gold" href="pages/public-participation.html">Get involved <i data-lucide="arrow-up-right"></i></a></div></section>
+
+    <!-- =================================================== -->
+    <!-- CONTACT                                              -->
+    <!-- =================================================== -->
+    <section class="section contact-section" id="contact">
+      <div class="container contact-grid">
+        <div>
+          <div class="eyebrow"><span></span> GET IN TOUCH</div>
+          <h2>We're here to <em>assist.</em></h2>
+          <p>Contact Naledi Local Municipality for general enquiries, service information and assistance.</p>
+          <div class="contact-detail"><i data-lucide="map-pin"></i><div><small>VISIT US</small><strong>19A Market Street, Vryburg, 8600</strong></div></div>
+          <div class="contact-detail"><i data-lucide="phone"></i><div><small>CALL US</small><strong>053 928 2200</strong></div></div>
+          <div class="contact-detail"><i data-lucide="mail"></i><div><small>EMAIL</small><strong>info@naledigov.co.za</strong></div></div>
+          <div class="contact-detail"><i data-lucide="clock"></i><div><small>OFFICE HOURS</small><strong>Monday – Friday, 07:30 – 16:00</strong></div></div>
+          <a class="text-link" href="pages/contact.html" style="margin-top:16px;display:inline-flex">Full contact page <i data-lucide="arrow-up-right"></i></a>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <h3>Send an enquiry</h3>
+          <p>This demo form does not transmit personal information.</p>
+          <label for="fullName">Full name</label>
+          <input id="fullName" name="name" required placeholder="Your name">
+          <label for="emailAddress">Email address</label>
+          <input id="emailAddress" name="email" type="email" required placeholder="you@example.com">
+          <label for="enquiryType">Enquiry category</label>
+          <select id="enquiryType" name="category">
+            <option>General enquiry</option>
+            <option>Water and sanitation</option>
+            <option>Electricity</option>
+            <option>Housing</option>
+            <option>Billing and accounts</option>
+            <option>Other</option>
+          </select>
+          <label for="message">How can we help?</label>
+          <textarea id="message" name="message" rows="4" required placeholder="Write your message…"></textarea>
+          <button class="btn btn-primary" type="submit">Send demo enquiry <i data-lucide="send"></i></button>
+          <div class="form-feedback" id="formFeedback" role="status"></div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-top">
+      <div class="footer-brand">
+        <div class="footer-brand-name"><span class="brand-mark">N</span><span><strong>NALEDI</strong><small>LOCAL MUNICIPALITY</small></span></div>
+        <p>Serving our communities through accountable governance and sustainable service delivery.</p>
+        <div class="social-links">
+          <a href="https://www.facebook.com/people/Naledi-Local-Municipality-Vryburg/1000693551734/" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+          <a href="pages/contact.html" aria-label="Email"><i data-lucide="mail"></i></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <a href="pages/about.html">About Naledi</a>
+        <a href="pages/council.html">Council &amp; leadership</a>
+        <a href="pages/water-services.html">Municipal services</a>
+        <a href="pages/news.html">News &amp; notices</a>
+      </div>
+      <div class="footer-col">
+        <h4>Resources</h4>
+        <a href="pages/budgets.html">Budgets &amp; reports</a>
+        <a href="pages/tenders.html">Tenders</a>
+        <a href="pages/vacancies.html">Vacancies</a>
+        <a href="pages/forms.html">Forms</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <span>19A Market Street</span>
+        <span>Vryburg, 8600</span>
+        <a href="tel:+27539282200">053 928 2200</a>
+        <a href="mailto:info@naledigov.co.za">info@naledigov.co.za</a>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span id="year"></span> Naledi Local Municipality. All rights reserved.</span>
+      <div><a href="#top">Privacy &amp; POPIA</a><a href="#top">Accessibility</a><a href="#top">Sitemap</a></div>
+      <span class="demo-label">REDESIGN DEMONSTRATION</span>
+    </div>
+  </footer>
+
+  <!-- SHARED INTERACTIVE ELEMENTS -->
+  <div class="accessibility-panel" id="accessibilityPanel" hidden>
+    <strong>Accessibility tools</strong>
+    <button data-font="down">A− Smaller text</button>
+    <button data-font="up">A+ Larger text</button>
+    <button id="contrastToggle">Toggle high contrast</button>
+    <button id="motionToggle">Reduce animation</button>
+  </div>
+
+  <div class="modal-backdrop" id="searchModal" hidden>
+    <div class="search-modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="searchClose" aria-label="Close search"><i data-lucide="x"></i></button>
+      <div class="eyebrow"><span></span> MUNICIPAL SEARCH</div>
+      <h2 id="modalTitle">What are you looking for?</h2>
+      <form id="modalSearchForm">
+        <input id="modalSearchInput" type="search" placeholder="Search services, notices and resources…">
+        <button class="btn btn-primary">Search <i data-lucide="arrow-right"></i></button>
+      </form>
+      <div class="popular-searches">
+        <small>POPULAR SEARCHES</small>
+        <button data-query="tenders">Tenders</button>
+        <button data-query="budget">Budgets</button>
+        <button data-query="water">Water</button>
+        <button data-query="vacancies">Vacancies</button>
+      </div>
+    </div>
+  </div>
+
+  <button class="chat-launcher" id="chatLauncher" aria-label="Open Naledi assistant"><i data-lucide="message-circle"></i><span class="chat-pulse"></span></button>
+  <section class="chat-window" id="chatWindow" aria-label="Naledi virtual assistant" hidden>
+    <div class="chat-header">
+      <div class="chat-avatar"><i data-lucide="bot"></i></div>
+      <div><strong>Naledi Assistant</strong><small><span class="live-dot"></span> Online · Demo assistant</small></div>
+      <button id="chatClose" aria-label="Close assistant"><i data-lucide="x"></i></button>
+    </div>
+    <div class="chat-messages" id="chatMessages">
+      <div class="chat-message bot">Hello! I'm the Naledi virtual assistant. I can help you find municipal services, contact details, tenders, vacancies and public documents. What would you like to know?</div>
+      <div class="chat-suggestions">
+        <button data-chat="How do I contact the municipality?">Contact details</button>
+        <button data-chat="Where can I find tenders?">Tenders</button>
+        <button data-chat="How do I report a water problem?">Report a problem</button>
+      </div>
+    </div>
+    <form class="chat-input" id="chatForm">
+      <input id="chatInput" placeholder="Type your question…" autocomplete="off" aria-label="Your question">
+      <button aria-label="Send message"><i data-lucide="send"></i></button>
+    </form>
+    <div class="chat-disclaimer">Automated demo assistant · Verify official information with the municipality.</div>
+  </section>
+  <button class="back-to-top" id="backToTop" aria-label="Scroll to top"><i data-lucide="arrow-up"></i></button>
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="js/data.js"></script>
+  <script src="js/chatbot.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>

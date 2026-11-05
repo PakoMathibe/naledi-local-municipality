@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Budgets — Naledi Local Municipality. MTREF budget documents, adjustment budgets, tariffs and reporting.">
+  <meta name="theme-color" content="#10243b">
+  <title>Budgets | Naledi Local Municipality</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/tokens.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/pages.css">
+  <link rel="stylesheet" href="../css/inner-pages.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <div class="utility-bar">
+    <div class="container utility-inner">
+      <span><i data-lucide="clock-3"></i> Monday – Friday, 07:30 – 16:00</span>
+      <div class="utility-links">
+        <a href="tel:+27539282200"><i data-lucide="phone"></i> 053 928 2200</a>
+        <a href="mailto:info@naledigov.co.za"><i data-lucide="mail"></i> Contact municipality</a>
+        <button class="text-button" id="accessibilityToggle" aria-expanded="false"><i data-lucide="accessibility"></i> Accessibility</button>
+      </div>
+    </div>
+  </div>
+
+  <header class="site-header" id="top">
+    <div class="container header-main">
+      <a class="brand" href="../index.html" aria-label="Naledi Local Municipality home">
+        <img src="../images/naledilocalmunicipalitylogo.jpg" alt="Naledi Local Municipality logo" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'">
+        <span class="brand-fallback"><span class="brand-mark">N</span></span>
+        <span class="brand-copy"><strong>NALEDI</strong><small>LOCAL MUNICIPALITY</small></span>
+      </a>
+      <div class="header-actions">
+        <a class="header-contact" href="tel:+27539282200"><span class="contact-icon"><i data-lucide="phone-call"></i></span><span><small>Need assistance?</small><strong>053 928 2200</strong></span></a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false"><i data-lucide="menu"></i></button>
+      </div>
+    </div>
+    <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+      <div class="container nav-inner">
+        <a class="nav-home" href="../index.html" aria-label="Home"><i data-lucide="house"></i></a>
+        <div class="nav-item"><button class="nav-link" data-menu="municipality">The Municipality <i data-lucide="chevron-down"></i></button></div>
+        <div class="nav-item"><button class="nav-link" data-menu="services">Services <i data-lucide="chevron-down"></i></button></div>
+        <div class="nav-item"><button class="nav-link" data-menu="governance">Governance <i data-lucide="chevron-down"></i></button></div>
+        <div class="nav-item"><button class="nav-link active" data-menu="resources">Documents & Resources <i data-lucide="chevron-down"></i></button></div>
+        <a class="nav-link direct" href="news.html">News & Notices</a>
+        <a class="nav-link direct" href="contact.html">Contact</a>
+        <button class="nav-search" id="searchOpen" aria-label="Search website"><i data-lucide="search"></i></button>
+      </div>
+      <div class="mega-menu" id="megaMenu" hidden><div class="container mega-inner" id="megaContent"></div></div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="../index.html">Home</a><span aria-hidden="true">/</span>
+          <a href="../index.html#resources">Resources</a><span aria-hidden="true">/</span>
+          <span aria-current="page">Budgets</span>
+        </nav>
+        <div class="eyebrow light"><span></span> FINANCE &amp; REPORTS</div>
+        <h1>Municipal <em>budgets.</em></h1>
+        <p>The approved MTREF budget, adjustment budgets, tariffs and related financial documents.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container content-narrow">
+        <div class="section-heading">
+          <div class="eyebrow"><span></span> HOW THE BUDGET WORKS</div>
+          <h2>A three-year <em>plan.</em></h2>
+        </div>
+        <p class="lead">The municipality adopts a Medium Term Revenue and Expenditure Framework (MTREF) budget each year, covering the budget year and the two following outer years. The budget is aligned with the IDP and the SDBIP, and approved by council before the start of the financial year on 1 July.</p>
+        <div class="info-grid" style="grid-template-columns:repeat(4,1fr);margin-top:32px">
+          <div class="info-card">
+            <span class="service-icon"><i data-lucide="wallet"></i></span>
+            <h3>MTREF</h3>
+            <p>Three-year budget framework aligned to the IDP.</p>
+          </div>
+          <div class="info-card">
+            <span class="service-icon"><i data-lucide="receipt"></i></span>
+            <h3>Tariffs</h3>
+            <p>Property rates and service tariffs for the year.</p>
+          </div>
+          <div class="info-card">
+            <span class="service-icon"><i data-lucide="chart-no-axes-combined"></i></span>
+            <h3>Adjustments</h3>
+            <p>Adjustment budgets as required during the year.</p>
+          </div>
+          <div class="info-card">
+            <span class="service-icon"><i data-lucide="file-text"></i></span>
+            <h3>Reporting</h3>
+            <p>Monthly and quarterly budget statements.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="background:var(--surface)">
+      <div class="container content-narrow">
+        <div class="section-heading">
+          <div class="eyebrow"><span></span> THE BUDGET CYCLE</div>
+          <h2>How the budget is <em>adopted.</em></h2>
+        </div>
+        <ol class="step-list">
+          <li><strong>Drafting (Aug – Feb)</strong><p>Departments prepare budget inputs in line with the IDP.</p></li>
+          <li><strong>Tabling (by 31 Mar)</strong><p>The Mayor tables the draft budget at council.</p></li>
+          <li><strong>Public comment (Apr – May)</strong><p>The draft budget is published for public comment in line with the MFMA.</p></li>
+          <li><strong>Adoption (by 30 Jun)</strong><p>Council adopts the final budget before the start of the financial year.</p></li>
+          <li><strong>Publication (Jul)</strong><p>The approved budget is published for public information.</p></li>
+          <li><strong>Adjustment budget (Jan – Feb)</strong><p>Adjustments tabled mid-year to account for changed circumstances.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container content-narrow">
+        <div class="section-heading">
+          <div class="eyebrow"><span></span> KEY DOCUMENTS</div>
+          <h2>Budget &amp; financial <em>documents.</em></h2>
+        </div>
+        <div class="info-grid" style="grid-template-columns:repeat(3,1fr)">
+          <div class="info-card">
+            <span class="service-icon"><i data-lucide="file-text"></i></span>
+            <h3>Draft budget</h3>
+            <p>Tabled by the Mayor and published for public comment.</p>
+          </div>
+          <div class="info-card">
+            <span class="service-icon"><i data-lucide="file-check"></i></span>
+            <h3>Approved budget</h3>
+            <p>Adopted by council before the start of the financial year.</p>
+          </div>
+          <div class="info-card">
+            <span class="service-icon"><i data-lucide="chart-no-axes-combined"></i></span>
+            <h3>Adjustment budget</h3>
+            <p>Tabled mid-year to account for changed circumstances.</p>
+          </div>
+          <div class="info-card">
+            <span class="service-icon"><i data-lucide="receipt"></i></span>
+            <h3>Tariffs</h3>
+            <p>Property rates and service charges for the year.</p>
+          </div>
+          <div class="info-card">
+            <span class="service-icon"><i data-lucide="file-text"></i></span>
+            <h3>Budget statements</h3>
+            <p>Monthly reporting against the approved budget.</p>
+          </div>
+          <div class="info-card">
+            <span class="service-icon"><i data-lucide="clipboard-list"></i></span>
+            <h3>SDBIP</h3>
+            <p>Implementation plan with targets tied to the budget.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="background:var(--surface)">
+      <div class="container content-narrow">
+        <div class="section-heading">
+          <div class="eyebrow"><span></span> CONTACT</div>
+          <h2>Request a <em>copy.</em></h2>
+        </div>
+        <p>Current budget documents are available from the Budget &amp; Treasury department.</p>
+        <div class="info-grid">
+          <div class="info-card">
+            <span class="service-icon"><i data-lucide="building-2"></i></span>
+            <h3>Physical address</h3>
+            <p>19A Market Street, Vryburg, 8600</p>
+          </div>
+          <div class="info-card">
+            <span class="service-icon"><i data-lucide="phone"></i></span>
+            <h3>Switchboard</h3>
+            <p><a href="tel:+27539282200">053 928 2200</a></p>
+          </div>
+          <div class="info-card">
+            <span class="service-icon"><i data-lucide="mail"></i></span>
+            <h3>Email</h3>
+            <p><a href="mailto:info@naledigov.co.za">info@naledigov.co.za</a></p>
+          </div>
+          <div class="info-card">
+            <span class="service-icon"><i data-lucide="clock"></i></span>
+            <h3>Office hours</h3>
+            <p>Monday – Friday, 07:30 – 16:00</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section transparency-section">
+      <div class="container">
+        <div class="section-heading"><div class="eyebrow light"><span></span> RELATED INFORMATION</div><h2>Explore <em>more.</em></h2></div>
+        <div class="resource-grid" style="grid-template-columns:repeat(4,1fr)">
+          <a href="budget-treasury.html" class="resource-card">
+            <i data-lucide="wallet"></i>
+            <strong>Budget &amp; treasury</strong>
+            <span>Department page</span>
+            <i data-lucide="arrow-up-right"></i>
+          </a>
+          <a href="annual-reports.html" class="resource-card">
+            <i data-lucide="file-text"></i>
+            <strong>Annual reports</strong>
+            <span>Year-end reporting</span>
+            <i data-lucide="arrow-up-right"></i>
+          </a>
+          <a href="financial-statements.html" class="resource-card">
+            <i data-lucide="file-check"></i>
+            <strong>Financial statements</strong>
+            <span>Audited statements</span>
+            <i data-lucide="arrow-up-right"></i>
+          </a>
+          <a href="sdbip.html" class="resource-card">
+            <i data-lucide="chart-no-axes-combined"></i>
+            <strong>SDBIP</strong>
+            <span>Implementation plan</span>
+            <i data-lucide="arrow-up-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-top">
+      <div class="footer-brand">
+        <div class="footer-brand-name"><span class="brand-mark">N</span><span><strong>NALEDI</strong><small>LOCAL MUNICIPALITY</small></span></div>
+        <p>Serving our communities through accountable governance and sustainable service delivery.</p>
+        <div class="social-links">
+          <a href="https://www.facebook.com/people/Naledi-Local-Municipality-Vryburg/1000693551734/" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+          <a href="mailto:info@naledigov.co.za" aria-label="Email"><i data-lucide="mail"></i></a>
+        </div>
+      </div>
+      <div class="footer-col"><h4>Explore</h4><a href="about.html">About Naledi</a><a href="council.html">Council &amp; leadership</a><a href="../index.html#services">Municipal services</a><a href="news.html">News &amp; notices</a></div>
+      <div class="footer-col"><h4>Resources</h4><a href="../index.html#resources">Budgets &amp; reports</a><a href="tenders.html">Tenders</a><a href="vacancies.html">Vacancies</a><a href="public-notices.html">Public notices</a></div>
+      <div class="footer-col"><h4>Contact</h4><span>19A Market Street</span><span>Vryburg, 8600</span><a href="tel:+27539282200">053 928 2200</a><a href="mailto:info@naledigov.co.za">info@naledigov.co.za</a></div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span id="year"></span> Naledi Local Municipality. All rights reserved.</span>
+      <div><a href="../index.html">Privacy &amp; POPIA</a><a href="../index.html">Accessibility</a><a href="../index.html">Sitemap</a></div>
+      <span class="demo-label">REDESIGN DEMONSTRATION</span>
+    </div>
+  </footer>
+
+  <div class="accessibility-panel" id="accessibilityPanel" hidden><strong>Accessibility tools</strong><button data-font="down">A− Smaller text</button><button data-font="up">A+ Larger text</button><button id="contrastToggle">Toggle high contrast</button><button id="motionToggle">Reduce animation</button></div>
+  <div class="modal-backdrop" id="searchModal" hidden><div class="search-modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><button class="modal-close" id="searchClose" aria-label="Close search"><i data-lucide="x"></i></button><div class="eyebrow"><span></span> MUNICIPAL SEARCH</div><h2 id="modalTitle">What are you looking for?</h2><form id="modalSearchForm"><input id="modalSearchInput" type="search" placeholder="Search services, notices and resources…"><button class="btn btn-primary">Search <i data-lucide="arrow-right"></i></button></form><div class="popular-searches"><small>POPULAR SEARCHES</small><button data-query="tenders">Tenders</button><button data-query="budget">Budgets</button><button data-query="water">Water</button><button data-query="vacancies">Vacancies</button></div></div></div>
+  <button class="chat-launcher" id="chatLauncher" aria-label="Open Naledi assistant"><i data-lucide="message-circle"></i><span class="chat-pulse"></span></button>
+  <section class="chat-window" id="chatWindow" aria-label="Naledi virtual assistant" hidden><div class="chat-header"><div class="chat-avatar"><i data-lucide="bot"></i></div><div><strong>Naledi Assistant</strong><small><span class="live-dot"></span> Online · Demo assistant</small></div><button id="chatClose" aria-label="Close assistant"><i data-lucide="x"></i></button></div><div class="chat-messages" id="chatMessages"><div class="chat-message bot">Hello! Ask me about budgets, MTREF, tariffs or municipal contacts.</div><div class="chat-suggestions"><button data-chat="Who is the mayor?">Leadership</button><button data-chat="How do I contact the municipality?">Contact details</button><button data-chat="Where can I find tenders?">Tenders</button></div></div><form class="chat-input" id="chatForm"><input id="chatInput" placeholder="Type your question…" autocomplete="off" aria-label="Your question"><button aria-label="Send message"><i data-lucide="send"></i></button></form><div class="chat-disclaimer">Automated demo assistant · Verify official information with the municipality.</div></section>
+  <button class="back-to-top" id="backToTop" aria-label="Scroll to top"><i data-lucide="arrow-up"></i></button>
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="../js/data.js"></script>
+  <script src="../js/chatbot.js"></script>
+  <script src="../js/app.js"></script>
+</body>
+</html>

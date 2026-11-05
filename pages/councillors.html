@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Councillors — Naledi Local Municipality. Elected representatives, wards, roles and how to contact your councillor.">
+  <meta name="theme-color" content="#10243b">
+  <title>Councillors | Naledi Local Municipality</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/tokens.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/pages.css">
+  <link rel="stylesheet" href="../css/inner-pages.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <div class="utility-bar">
+    <div class="container utility-inner">
+      <span><i data-lucide="clock-3"></i> Monday – Friday, 07:30 – 16:00</span>
+      <div class="utility-links">
+        <a href="tel:+27539282200"><i data-lucide="phone"></i> 053 928 2200</a>
+        <a href="mailto:info@naledigov.co.za"><i data-lucide="mail"></i> Contact municipality</a>
+        <button class="text-button" id="accessibilityToggle" aria-expanded="false"><i data-lucide="accessibility"></i> Accessibility</button>
+      </div>
+    </div>
+  </div>
+
+  <header class="site-header" id="top">
+    <div class="container header-main">
+      <a class="brand" href="../index.html" aria-label="Naledi Local Municipality home">
+        <img src="../images/naledilocalmunicipalitylogo.jpg" alt="Naledi Local Municipality logo" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'">
+        <span class="brand-fallback"><span class="brand-mark">N</span></span>
+        <span class="brand-copy"><strong>NALEDI</strong><small>LOCAL MUNICIPALITY</small></span>
+      </a>
+      <div class="header-actions">
+        <a class="header-contact" href="tel:+27539282200"><span class="contact-icon"><i data-lucide="phone-call"></i></span><span><small>Need assistance?</small><strong>053 928 2200</strong></span></a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false"><i data-lucide="menu"></i></button>
+      </div>
+    </div>
+    <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+      <div class="container nav-inner">
+        <a class="nav-home" href="../index.html" aria-label="Home"><i data-lucide="house"></i></a>
+        <div class="nav-item"><button class="nav-link active" data-menu="municipality">The Municipality <i data-lucide="chevron-down"></i></button></div>
+        <div class="nav-item"><button class="nav-link" data-menu="services">Services <i data-lucide="chevron-down"></i></button></div>
+        <div class="nav-item"><button class="nav-link" data-menu="governance">Governance <i data-lucide="chevron-down"></i></button></div>
+        <div class="nav-item"><button class="nav-link" data-menu="resources">Documents & Resources <i data-lucide="chevron-down"></i></button></div>
+        <a class="nav-link direct" href="news.html">News & Notices</a>
+        <a class="nav-link direct" href="contact.html">Contact</a>
+        <button class="nav-search" id="searchOpen" aria-label="Search website"><i data-lucide="search"></i></button>
+      </div>
+      <div class="mega-menu" id="megaMenu" hidden><div class="container mega-inner" id="megaContent"></div></div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="../index.html">Home</a><span aria-hidden="true">/</span>
+          <a href="council.html">Council &amp; Leadership</a><span aria-hidden="true">/</span>
+          <span aria-current="page">Councillors</span>
+        </nav>
+        <div class="eyebrow light"><span></span> ELECTED REPRESENTATIVES</div>
+        <h1>Naledi <em>councillors.</em></h1>
+        <p>Elected representatives serving wards and proportional seats across the Naledi Local Municipality area.</p>
+      </div>
+    </section>
+
+    <!-- YOUR REPRESENTATIVES -->
+    <section class="section">
+      <div class="container content-narrow">
+        <div class="section-heading">
+          <div class="eyebrow"><span></span> YOUR REPRESENTATIVES</div>
+          <h2>Who councillors <em>are.</em></h2>
+        </div>
+        <p class="lead">Councillors are elected to represent their communities, oversee municipal performance and take part in council decisions. Each councillor serves a five-year term and works with municipal officials to address local issues.</p>
+        <div class="info-grid" style="grid-template-columns:repeat(4,1fr);margin-top:32px">
+          <div class="info-card">
+            <span class="service-icon"><i data-lucide="user-check"></i></span>
+            <h3>Ward councillors</h3>
+            <p>Elected by voters in a specific ward to represent that ward's residents.</p>
+          </div>
+          <div class="info-card">
+            <span class="service-icon"><i data-lucide="list-checks"></i></span>
+            <h3>PR councillors</h3>
+            <p>Proportional representation councillors elected from party lists.</p>
+          </div>
+          <div class="info-card">
+            <span class="service-icon"><i data-lucide="message-square"></i></span>
+            <h3>Constituency work</h3>
+            <p>Helping residents access services and resolve local issues.</p>
+          </div>
+          <div class="info-card">
+            <span class="service-icon"><i data-lucide="megaphone"></i></span>
+            <h3>Report-back meetings</h3>
+            <p>Sharing information with communities about council matters.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ROLE OF A COUNCILLOR -->
+    <section class="section" style="background:var(--surface)">
+      <div class="container content-narrow">
+        <div class="section-heading">
+          <div class="eyebrow"><span></span> ROLE OF A COUNCILLOR</div>
+          <h2>What councillors <em>do.</em></h2>
+        </div>
+        <p>Councillors play a dual role — as elected representatives of their communities and as members of the municipal council. The Municipal Systems Act sets out their statutory responsibilities.</p>
+        <ol class="step-list">
+          <li><strong>Represent the community</strong><p>Bring community concerns and priorities into council discussions.</p></li>
+          <li><strong>Oversee the executive</strong><p>Hold the executive and administration accountable for service delivery.</p></li>
+          <li><strong>Attend council and committee meetings</strong><p>Participate in decision-making and voting on council matters.</p></li>
+          <li><strong>Engage with ward committees</strong><p>Work with elected ward committee members to prioritise local needs.</p></li>
+          <li><strong>Report back</strong><p>Inform communities about council decisions, budgets and services.</p></li>
+          <li><strong>Follow the code of conduct</strong><p>Act in the public interest, declare conflicts of interest and behave ethically.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- FIND YOUR COUNCILLOR -->
+    <section class="section">
+      <div class="container content-narrow">
+        <div class="section-heading">
+          <div class="eyebrow"><span></span> FIND YOUR COUNCILLOR</div>
+          <h2>How to reach <em>yours.</em></h2>
+        </div>
+        <p>If you're not sure who your ward councillor is, use one of these routes:</p>
+        <div class="info-grid" style="grid-template-columns:repeat(3,1fr);margin-top:32px">
+          <div class="info-card">
+            <span class="service-icon"><i data-lucide="phone"></i></span>
+            <h3>Call the switchboard</h3>
+            <p>Phone <a href="tel:+27539282200">053 928 2200</a> and ask to be directed to your ward councillor.</p>
+          </div>
+          <div class="info-card">
+            <span class="service-icon"><i data-lucide="mail"></i></span>
+            <h3>Email the municipality</h3>
+            <p>Email <a href="mailto:info@naledigov.co.za">info@naledigov.co.za</a> with your ward or address, and request the councillor's contact details.</p>
+          </div>
+          <div class="info-card">
+            <span class="service-icon"><i data-lucide="users"></i></span>
+            <h3>Attend a ward meeting</h3>
+            <p>Ward committee meetings and report-back sessions are the easiest way to meet your councillor in person.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHEN TO CONTACT -->
+    <section class="section" style="background:var(--surface)">
+      <div class="container content-narrow">
+        <div class="section-heading">
+          <div class="eyebrow"><span></span> WHEN TO CONTACT</div>
+          <h2>The right <em>channel.</em></h2>
+        </div>
+        <div class="info-grid" style="grid-template-columns:repeat(3,1fr);margin-top:32px">
+          <div class="info-card">
+            <span class="service-icon"><i data-lucide="user-check"></i></span>
+            <h3>Contact your councillor</h3>
+            <p>For ward-level concerns, community feedback, or issues that need to be raised with council.</p>
+          </div>
+          <div class="info-card">
+            <span class="service-icon"><i data-lucide="phone"></i></span>
+            <h3>Contact the department</h3>
+            <p>For service-specific queries — water, electricity, waste, accounts — the relevant department is faster.</p>
+          </div>
+          <div class="info-card">
+            <span class="service-icon"><i data-lucide="alert-triangle"></i></span>
+            <h3>Emergency services</h3>
+            <p>For life-threatening emergencies, call 10111 (police), 10177 (ambulance) or the local rapid response line.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section">
+      <div class="container content-narrow">
+        <div class="section-heading">
+          <div class="eyebrow"><span></span> CONTACT</div>
+          <h2>Speak to the <em>municipality.</em></h2>
+        </div>
+        <div class="info-grid" style="grid-template-columns:repeat(4,1fr);margin-top:24px">
+          <div class="info-card">
+            <span class="service-icon"><i data-lucide="building-2"></i></span>
+            <h3>Physical address</h3>
+            <p>19A Market Street, Vryburg, 8600</p>
+          </div>
+          <div class="info-card">
+            <span class="service-icon"><i data-lucide="phone"></i></span>
+            <h3>Switchboard</h3>
+            <p><a href="tel:+27539282200">053 928 2200</a></p>
+          </div>
+          <div class="info-card">
+            <span class="service-icon"><i data-lucide="mail"></i></span>
+            <h3>Email</h3>
+            <p><a href="mailto:info@naledigov.co.za">info@naledigov.co.za</a></p>
+          </div>
+          <div class="info-card">
+            <span class="service-icon"><i data-lucide="clock"></i></span>
+            <h3>Office hours</h3>
+            <p>Monday – Friday, 07:30 – 16:00</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RELATED -->
+    <section class="section transparency-section">
+      <div class="container">
+        <div class="section-heading"><div class="eyebrow light"><span></span> RELATED INFORMATION</div><h2>Explore <em>more.</em></h2></div>
+        <div class="resource-grid" style="grid-template-columns:repeat(4,1fr)">
+          <a href="council.html" class="resource-card">
+            <i data-lucide="landmark"></i>
+            <strong>Council &amp; leadership</strong>
+            <span>Structure and executive</span>
+            <i data-lucide="arrow-up-right"></i>
+          </a>
+          <a href="council-meetings.html" class="resource-card">
+            <i data-lucide="calendar-days"></i>
+            <strong>Council meetings</strong>
+            <span>Agendas and proceedings</span>
+            <i data-lucide="arrow-up-right"></i>
+          </a>
+          <a href="public-participation.html" class="resource-card">
+            <i data-lucide="users"></i>
+            <strong>Public participation</strong>
+            <span>Get involved</span>
+            <i data-lucide="arrow-up-right"></i>
+          </a>
+          <a href="contact.html" class="resource-card">
+            <i data-lucide="phone"></i>
+            <strong>Contact us</strong>
+            <span>General enquiries</span>
+            <i data-lucide="arrow-up-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-top">
+      <div class="footer-brand">
+        <div class="footer-brand-name"><span class="brand-mark">N</span><span><strong>NALEDI</strong><small>LOCAL MUNICIPALITY</small></span></div>
+        <p>Serving our communities through accountable governance and sustainable service delivery.</p>
+        <div class="social-links">
+          <a href="https://www.facebook.com/people/Naledi-Local-Municipality-Vryburg/1000693551734/" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+          <a href="mailto:info@naledigov.co.za" aria-label="Email"><i data-lucide="mail"></i></a>
+        </div>
+      </div>
+      <div class="footer-col"><h4>Explore</h4><a href="about.html">About Naledi</a><a href="council.html">Council &amp; leadership</a><a href="../index.html#services">Municipal services</a><a href="news.html">News &amp; notices</a></div>
+      <div class="footer-col"><h4>Resources</h4><a href="../index.html#resources">Budgets &amp; reports</a><a href="tenders.html">Tenders</a><a href="vacancies.html">Vacancies</a><a href="public-notices.html">Public notices</a></div>
+      <div class="footer-col"><h4>Contact</h4><span>19A Market Street</span><span>Vryburg, 8600</span><a href="tel:+27539282200">053 928 2200</a><a href="mailto:info@naledigov.co.za">info@naledigov.co.za</a></div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span id="year"></span> Naledi Local Municipality. All rights reserved.</span>
+      <div><a href="../index.html">Privacy &amp; POPIA</a><a href="../index.html">Accessibility</a><a href="../index.html">Sitemap</a></div>
+      <span class="demo-label">REDESIGN DEMONSTRATION</span>
+    </div>
+  </footer>
+
+  <div class="accessibility-panel" id="accessibilityPanel" hidden><strong>Accessibility tools</strong><button data-font="down">A− Smaller text</button><button data-font="up">A+ Larger text</button><button id="contrastToggle">Toggle high contrast</button><button id="motionToggle">Reduce animation</button></div>
+  <div class="modal-backdrop" id="searchModal" hidden><div class="search-modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><button class="modal-close" id="searchClose" aria-label="Close search"><i data-lucide="x"></i></button><div class="eyebrow"><span></span> MUNICIPAL SEARCH</div><h2 id="modalTitle">What are you looking for?</h2><form id="modalSearchForm"><input id="modalSearchInput" type="search" placeholder="Search services, notices and resources…"><button class="btn btn-primary">Search <i data-lucide="arrow-right"></i></button></form><div class="popular-searches"><small>POPULAR SEARCHES</small><button data-query="tenders">Tenders</button><button data-query="budget">Budgets</button><button data-query="water">Water</button><button data-query="vacancies">Vacancies</button></div></div></div>
+  <button class="chat-launcher" id="chatLauncher" aria-label="Open Naledi assistant"><i data-lucide="message-circle"></i><span class="chat-pulse"></span></button>
+  <section class="chat-window" id="chatWindow" aria-label="Naledi virtual assistant" hidden><div class="chat-header"><div class="chat-avatar"><i data-lucide="bot"></i></div><div><strong>Naledi Assistant</strong><small><span class="live-dot"></span> Online · Demo assistant</small></div><button id="chatClose" aria-label="Close assistant"><i data-lucide="x"></i></button></div><div class="chat-messages" id="chatMessages"><div class="chat-message bot">Hello! Ask me about councillors, council or municipal contacts.</div><div class="chat-suggestions"><button data-chat="Who is the mayor?">Leadership</button><button data-chat="How do I contact the municipality?">Contact details</button><button data-chat="Where can I find tenders?">Tenders</button></div></div><form class="chat-input" id="chatForm"><input id="chatInput" placeholder="Type your question…" autocomplete="off" aria-label="Your question"><button aria-label="Send message"><i data-lucide="send"></i></button></form><div class="chat-disclaimer">Automated demo assistant · Verify official information with the municipality.</div></section>
+  <button class="back-to-top" id="backToTop" aria-label="Scroll to top"><i data-lucide="arrow-up"></i></button>
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="../js/data.js"></script>
+  <script src="../js/chatbot.js"></script>
+  <script src="../js/app.js"></script>
+</body>
+</html>

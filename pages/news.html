@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="News & Notices — Naledi Local Municipality. Latest announcements, public notices, tenders, vacancies and community updates.">
+  <meta name="theme-color" content="#10243b">
+  <title>News & Notices | Naledi Local Municipality</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/tokens.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/pages.css">
+  <link rel="stylesheet" href="../css/inner-pages.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <div class="utility-bar">
+    <div class="container utility-inner">
+      <span><i data-lucide="clock-3"></i> Monday – Friday, 07:30 – 16:00</span>
+      <div class="utility-links">
+        <a href="tel:+27539282200"><i data-lucide="phone"></i> 053 928 2200</a>
+        <a href="mailto:info@naledigov.co.za"><i data-lucide="mail"></i> Contact municipality</a>
+        <button class="text-button" id="accessibilityToggle" aria-expanded="false"><i data-lucide="accessibility"></i> Accessibility</button>
+      </div>
+    </div>
+  </div>
+
+  <header class="site-header" id="top">
+    <div class="container header-main">
+      <a class="brand" href="../index.html" aria-label="Naledi Local Municipality home">
+        <img src="../images/naledilocalmunicipalitylogo.jpg" alt="Naledi Local Municipality logo" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'">
+        <span class="brand-fallback"><span class="brand-mark">N</span></span>
+        <span class="brand-copy"><strong>NALEDI</strong><small>LOCAL MUNICIPALITY</small></span>
+      </a>
+      <div class="header-actions">
+        <a class="header-contact" href="tel:+27539282200"><span class="contact-icon"><i data-lucide="phone-call"></i></span><span><small>Need assistance?</small><strong>053 928 2200</strong></span></a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false"><i data-lucide="menu"></i></button>
+      </div>
+    </div>
+    <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+      <div class="container nav-inner">
+        <a class="nav-home" href="../index.html" aria-label="Home"><i data-lucide="house"></i></a>
+        <div class="nav-item"><button class="nav-link" data-menu="municipality">The Municipality <i data-lucide="chevron-down"></i></button></div>
+        <div class="nav-item"><button class="nav-link" data-menu="services">Services <i data-lucide="chevron-down"></i></button></div>
+        <div class="nav-item"><button class="nav-link" data-menu="governance">Governance <i data-lucide="chevron-down"></i></button></div>
+        <div class="nav-item"><button class="nav-link" data-menu="resources">Documents & Resources <i data-lucide="chevron-down"></i></button></div>
+        <a class="nav-link direct active" href="news.html">News & Notices</a>
+        <a class="nav-link direct" href="contact.html">Contact</a>
+        <button class="nav-search" id="searchOpen" aria-label="Search website"><i data-lucide="search"></i></button>
+      </div>
+      <div class="mega-menu" id="megaMenu" hidden><div class="container mega-inner" id="megaContent"></div></div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="../index.html">Home</a><span aria-hidden="true">/</span>
+          <span aria-current="page">News &amp; Notices</span>
+        </nav>
+        <div class="eyebrow light"><span></span> STAY INFORMED</div>
+        <h1>News &amp; <em>notices.</em></h1>
+        <p>Official updates, announcements and important information from Naledi Local Municipality.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-heading split-heading">
+          <div>
+            <div class="eyebrow"><span></span> LATEST ANNOUNCEMENTS</div>
+            <h2>What's <em>new.</em></h2>
+            <p>Recent news from across the municipality. For formal notices and comment periods, see the public notices page.</p>
+          </div>
+          <div class="news-filter" role="tablist" aria-label="Filter news by category">
+            <button class="news-filter-btn active" data-filter="all" role="tab" aria-selected="true">All</button>
+            <button class="news-filter-btn" data-filter="notice" role="tab" aria-selected="false">Notices</button>
+            <button class="news-filter-btn" data-filter="service" role="tab" aria-selected="false">Service updates</button>
+            <button class="news-filter-btn" data-filter="community" role="tab" aria-selected="false">Community</button>
+          </div>
+        </div>
+
+        <div class="news-grid" id="newsGrid">
+          <article class="news-card" data-category="service">
+            <div class="news-card-media"><i data-lucide="droplets"></i></div>
+            <div class="news-card-body">
+              <span class="tag">SERVICE UPDATE</span>
+              <h3>Water maintenance in Vryburg</h3>
+              <p>Planned maintenance may affect water pressure in parts of Vryburg. Residents are advised to store water where possible.</p>
+              <a href="water-services.html" class="text-link">Water &amp; sanitation <i data-lucide="arrow-up-right"></i></a>
+            </div>
+          </article>
+
+          <article class="news-card" data-category="notice">
+            <div class="news-card-media"><i data-lucide="megaphone"></i></div>
+            <div class="news-card-body">
+              <span class="tag">PUBLIC NOTICE</span>
+              <h3>Draft IDP and budget comment period</h3>
+              <p>Residents are invited to comment on the draft IDP and budget. Details of submission dates and venues are provided in the notice.</p>
+              <a href="public-notices.html" class="text-link">Public notices <i data-lucide="arrow-up-right"></i></a>
+            </div>
+          </article>
+
+          <article class="news-card" data-category="community">
+            <div class="news-card-media"><i data-lucide="users"></i></div>
+            <div class="news-card-body">
+              <span class="tag">COMMUNITY</span>
+              <h3>Ward committee meetings</h3>
+              <p>Upcoming ward committee meetings have been scheduled across wards. Confirm dates and venues with your ward councillor.</p>
+              <a href="public-participation.html" class="text-link">Public participation <i data-lucide="arrow-up-right"></i></a>
+            </div>
+          </article>
+
+          <article class="news-card" data-category="notice">
+            <div class="news-card-media"><i data-lucide="file-text"></i></div>
+            <div class="news-card-body">
+              <span class="tag">TENDERS</span>
+              <h3>New procurement opportunities</h3>
+              <p>New tender opportunities have been advertised. Read the advert for closing dates and submission requirements.</p>
+              <a href="tenders.html" class="text-link">Tenders <i data-lucide="arrow-up-right"></i></a>
+            </div>
+          </article>
+
+          <article class="news-card" data-category="service">
+            <div class="news-card-media"><i data-lucide="zap"></i></div>
+            <div class="news-card-body">
+              <span class="tag">SERVICE UPDATE</span>
+              <h3>Electricity infrastructure maintenance</h3>
+              <p>Scheduled maintenance on electrical infrastructure may affect supply in specific areas. Plan around the announced times.</p>
+              <a href="electricity.html" class="text-link">Electricity <i data-lucide="arrow-up-right"></i></a>
+            </div>
+          </article>
+
+          <article class="news-card" data-category="community">
+            <div class="news-card-media"><i data-lucide="briefcase-business"></i></div>
+            <div class="news-card-body">
+              <span class="tag">CAREERS</span>
+              <h3>Vacancies advertised</h3>
+              <p>New vacancies have been advertised. Use the advert to confirm closing dates and application instructions.</p>
+              <a href="vacancies.html" class="text-link">Vacancies <i data-lucide="arrow-up-right"></i></a>
+            </div>
+          </article>
+        </div>
+
+        <div class="news-empty" id="newsEmpty" hidden>
+          <p>No announcements match this filter right now. Try <strong>All</strong>, or visit the <a href="public-notices.html">public notices page</a>.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="notice-strip">
+      <div class="container emergency-inner">
+        <div class="emergency-symbol"><i data-lucide="megaphone"></i></div>
+        <div class="emergency-copy">
+          <small>OFFICIAL NOTICEBOARD</small>
+          <strong>Formal notices and comment periods.</strong>
+          <span>Always read the notice itself for details, dates and submission requirements.</span>
+        </div>
+        <div class="emergency-numbers">
+          <a href="public-notices.html"><small>Public notices</small><strong>View all →</strong></a>
+          <a href="tenders.html"><small>Tenders</small><strong>View all →</strong></a>
+          <a href="vacancies.html"><small>Vacancies</small><strong>View all →</strong></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container content-narrow">
+        <div class="section-heading">
+          <div class="eyebrow"><span></span> STAY CONNECTED</div>
+          <h2>How to keep <em>informed.</em></h2>
+        </div>
+        <div class="faq-list">
+          <details class="faq-item" open>
+            <summary>Where do official notices appear?</summary>
+            <p>Formal notices are published on the <a href="public-notices.html">public notices page</a> and in line with statutory requirements. Always check the official notice for comment deadlines and submission details.</p>
+          </details>
+          <details class="faq-item">
+            <summary>How do I get the latest news?</summary>
+            <p>Bookmark this page. You can also follow the municipality on <a href="https://www.facebook.com/people/Naledi-Local-Municipality-Vryburg/1000693551734/" target="_blank" rel="noopener">Facebook</a>, check the homepage news section, and call <a href="tel:+27539282200">053 928 2200</a> for general enquiries.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Where are tenders and vacancies advertised?</summary>
+            <p>See the <a href="tenders.html">tenders</a> and <a href="vacancies.html">vacancies</a> pages for the current listings and instructions.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Can I comment on a notice online?</summary>
+            <p>This demo site does not collect submissions. On the production site, comment instructions are included in each notice — usually an email, a form, or a physical drop-off point.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section transparency-section">
+      <div class="container">
+        <div class="section-heading">
+          <div class="eyebrow light"><span></span> RELATED PAGES</div>
+          <h2>More ways to <em>engage.</em></h2>
+        </div>
+        <div class="resource-grid" style="grid-template-columns:repeat(4,1fr)">
+          <a href="public-notices.html" class="resource-card">
+            <i data-lucide="megaphone"></i>
+            <strong>Public notices</strong>
+            <span>Formal announcements and comment</span>
+            <i data-lucide="arrow-up-right"></i>
+          </a>
+          <a href="public-participation.html" class="resource-card">
+            <i data-lucide="users"></i>
+            <strong>Public participation</strong>
+            <span>Meetings, petitions and ward inputs</span>
+            <i data-lucide="arrow-up-right"></i>
+          </a>
+          <a href="council-meetings.html" class="resource-card">
+            <i data-lucide="calendar-days"></i>
+            <strong>Council meetings</strong>
+            <span>Agendas and proceedings</span>
+            <i data-lucide="arrow-up-right"></i>
+          </a>
+          <a href="tenders.html" class="resource-card">
+            <i data-lucide="file-text"></i>
+            <strong>Tenders</strong>
+            <span>Procurement opportunities</span>
+            <i data-lucide="arrow-up-right"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-top">
+      <div class="footer-brand">
+        <div class="footer-brand-name"><span class="brand-mark">N</span><span><strong>NALEDI</strong><small>LOCAL MUNICIPALITY</small></span></div>
+        <p>Serving our communities through accountable governance and sustainable service delivery.</p>
+        <div class="social-links">
+          <a href="https://www.facebook.com/people/Naledi-Local-Municipality-Vryburg/1000693551734/" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+          <a href="mailto:info@naledigov.co.za" aria-label="Email"><i data-lucide="mail"></i></a>
+        </div>
+      </div>
+      <div class="footer-col"><h4>Explore</h4><a href="about.html">About Naledi</a><a href="council.html">Council &amp; leadership</a><a href="../index.html#services">Municipal services</a><a href="news.html">News &amp; notices</a></div>
+      <div class="footer-col"><h4>Resources</h4><a href="../index.html#resources">Budgets &amp; reports</a><a href="tenders.html">Tenders</a><a href="vacancies.html">Vacancies</a><a href="public-notices.html">Public notices</a></div>
+      <div class="footer-col"><h4>Contact</h4><span>19A Market Street</span><span>Vryburg, 8600</span><a href="tel:+27539282200">053 928 2200</a><a href="mailto:info@naledigov.co.za">info@naledigov.co.za</a></div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span id="year"></span> Naledi Local Municipality. All rights reserved.</span>
+      <div><a href="../index.html">Privacy &amp; POPIA</a><a href="../index.html">Accessibility</a><a href="../index.html">Sitemap</a></div>
+      <span class="demo-label">REDESIGN DEMONSTRATION</span>
+    </div>
+  </footer>
+
+  <div class="accessibility-panel" id="accessibilityPanel" hidden><strong>Accessibility tools</strong><button data-font="down">A− Smaller text</button><button data-font="up">A+ Larger text</button><button id="contrastToggle">Toggle high contrast</button><button id="motionToggle">Reduce animation</button></div>
+  <div class="modal-backdrop" id="searchModal" hidden><div class="search-modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><button class="modal-close" id="searchClose" aria-label="Close search"><i data-lucide="x"></i></button><div class="eyebrow"><span></span> MUNICIPAL SEARCH</div><h2 id="modalTitle">What are you looking for?</h2><form id="modalSearchForm"><input id="modalSearchInput" type="search" placeholder="Search services, notices and resources…"><button class="btn btn-primary">Search <i data-lucide="arrow-right"></i></button></form><div class="popular-searches"><small>POPULAR SEARCHES</small><button data-query="tenders">Tenders</button><button data-query="budget">Budgets</button><button data-query="water">Water</button><button data-query="vacancies">Vacancies</button></div></div></div>
+  <button class="chat-launcher" id="chatLauncher" aria-label="Open Naledi assistant"><i data-lucide="message-circle"></i><span class="chat-pulse"></span></button>
+  <section class="chat-window" id="chatWindow" aria-label="Naledi virtual assistant" hidden><div class="chat-header"><div class="chat-avatar"><i data-lucide="bot"></i></div><div><strong>Naledi Assistant</strong><small><span class="live-dot"></span> Online · Demo assistant</small></div><button id="chatClose" aria-label="Close assistant"><i data-lucide="x"></i></button></div><div class="chat-messages" id="chatMessages"><div class="chat-message bot">Hello! Ask me about news, notices, tenders, vacancies or municipal contacts.</div><div class="chat-suggestions"><button data-chat="Where can I find tenders?">Tenders</button><button data-chat="How do I contact the municipality?">Contact details</button><button data-chat="Where can I find public notices?">Public notices</button></div></div><form class="chat-input" id="chatForm"><input id="chatInput" placeholder="Type your question…" autocomplete="off" aria-label="Your question"><button aria-label="Send message"><i data-lucide="send"></i></button></form><div class="chat-disclaimer">Automated demo assistant · Verify official information with the municipality.</div></section>
+  <button class="back-to-top" id="backToTop" aria-label="Scroll to top"><i data-lucide="arrow-up"></i></button>
+
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <script src="../js/data.js"></script>
+  <script src="../js/chatbot.js"></script>
+  <script src="../js/app.js"></script>
+  <script>
+    // Simple category filter for the news cards (demo only).
+    document.addEventListener("DOMContentLoaded", function () {
+      var buttons = document.querySelectorAll(".news-filter-btn");
+      var cards = document.querySelectorAll(".news-card");
+      var empty = document.getElementById("newsEmpty");
+      buttons.forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          buttons.forEach(function (b) {
+            b.classList.remove("active");
+            b.setAttribute("aria-selected", "false");
+          });
+          btn.classList.add("active");
+          btn.setAttribute("aria-selected", "true");
+          var filter = btn.getAttribute("data-filter");
+          var shown = 0;
+          cards.forEach(function (card) {
+            var show = filter === "all" || card.getAttribute("data-category") === filter;
+            card.style.display = show ? "" : "none";
+            if (show) shown++;
+          });
+          if (empty) empty.hidden = shown !== 0;
+        });
+      });
+    });
+  </script>
+</body>
+</html>
